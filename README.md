@@ -41,6 +41,8 @@ Target Variable:
   - 0 = No Stroke
   - 1 = Stroke
 
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/32e4a371-627f-4e41-8b39-3d6145735a0f" />
+
 ---
 
 ## Machine Learning Models Used
