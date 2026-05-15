@@ -41,7 +41,7 @@ Target Variable:
   - 0 = No Stroke
   - 1 = Stroke
 
-<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/32e4a371-627f-4e41-8b39-3d6145735a0f" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/32e4a371-627f-4e41-8b39-3d6145735a0f" />
 
 ---
 
@@ -62,11 +62,14 @@ The following models were implemented and compared:
 ## Resampling Techniques
 
 Due to severe class imbalance in stroke cases, multiple balancing methods were applied:
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/914a8555-83a0-43d2-88ca-7e7e22e07cba" />
+Shiny was used to generate the interactive image
 
 - Upsampling
 - Downsampling
 - SMOTE
 - ROSE
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/bb73a24c-273f-4627-910f-0bdf5ce95801" />
 
 ---
 
