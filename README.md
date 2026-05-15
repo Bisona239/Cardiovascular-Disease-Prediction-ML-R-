@@ -19,8 +19,8 @@ The project was developed in R and demonstrates end-to-end machine learning impl
 ---
 
 ## Dataset
-
-Dataset: Stroke Prediction Dataset
+The dataset contains patient demographic and clinical features used to predict stroke occurrence.
+Source: Kaggle Stroke Prediction Dataset
 
 Features include:
 
