@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project applies machine learning techniques to predict the occurrence of stroke using demographic and clinical health data. The workflow includes data preprocessing, missing-value imputation, class-imbalance handling, model training, hyperparameter tuning, ROC analysis, and dashboard visualisation in Power BI.
+This project applies machine learning techniques to predict stroke occurrence using demographic and clinical data. The workflow includes data preprocessing, missing-value imputation, class-imbalance handling, model training, hyperparameter tuning, and ROC analysis. 
 
 The project was developed in R and demonstrates end-to-end machine learning implementation for healthcare analytics.
 
@@ -10,11 +10,11 @@ The project was developed in R and demonstrates end-to-end machine learning impl
 
 ## Objectives
 
+- Handle class imbalance using resampling techniques
 - Predict stroke risk using supervised machine learning
 - Compare multiple classification algorithms
-- Handle class imbalance using resampling techniques
 - Evaluate models using ROC-AUC and classification metrics
-- Visualise insights using Power BI dashboards
+- Significance of results to epidemiology and health science
 
 ---
 
@@ -34,6 +34,10 @@ Features include:
 - Marital status
 - Work type
 - Residence type
+  
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/32e4a371-627f-4e41-8b39-3d6145735a0f" />
+
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/5a87418c-cf31-4699-91fb-e4b65f01747f" />
 
 Target Variable:
 
@@ -41,38 +45,7 @@ Target Variable:
   - 0 = No Stroke
   - 1 = Stroke
 
-<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/32e4a371-627f-4e41-8b39-3d6145735a0f" />
-
 ---
-
-## Machine Learning Models Used
-
-The following models were implemented and compared:
-
-| Model | Purpose |
-|---|---|
-| Random Forest | Ensemble classification |
-| Logistic Regression | Baseline statistical model |
-| Decision Tree | Interpretable classification |
-| Naive Bayes | Probabilistic learning |
-| Support Vector Machine (SVM) | Margin-based classification |
-
----
-
-## Resampling Techniques
-
-Due to severe class imbalance in stroke cases, multiple balancing methods were applied:
-<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/914a8555-83a0-43d2-88ca-7e7e22e07cba" />
-Shiny was used to generate the interactive image
-
-- Upsampling
-- Downsampling
-- SMOTE
-- ROSE
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/bb73a24c-273f-4627-910f-0bdf5ce95801" />
-
----
-
 ## Data Preprocessing
 
 The preprocessing workflow included:
@@ -82,6 +55,32 @@ The preprocessing workflow included:
 - Normalisation using Min-Max scaling
 - Train-test splitting
 - Feature engineering
+  
+---
+
+## Resampling Techniques
+
+Due to severe class imbalance in stroke cases (Shiny was used to generate the image in R): 
+<img width="450" height="400" alt="image" src="https://github.com/user-attachments/assets/914a8555-83a0-43d2-88ca-7e7e22e07cba" />
+
+
+Multiple balancing methods were applied to the training data after the split
+- Upsampling (Random Oversampling (ROS))
+- Downsampling (Random Under-sampling (RUS))
+- SMOTE (Synthetic Minority Oversampling Technique)
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/bb73a24c-273f-4627-910f-0bdf5ce95801" />
+
+---
+## Machine Learning Models Used
+
+The following models were implemented and compared:
+
+| Model | Purpose |
+|---|---|
+| Random Forest | Ensemble classification |
+| Logistic Regression | Baseline statistical model |
+| Naive Bayes | Probabilistic learning |
+| Support Vector Machine (SVM) | Margin-based classification |
 
 ---
 
@@ -111,18 +110,9 @@ Example outputs include:
 - Confusion matrices
 - Hyperparameter tuning plots
 
----
-
-## Power BI Dashboard
-
-An interactive Power BI dashboard was developed to visualise:
-
-- Stroke prevalence
-- Demographic distributions
-- Feature importance
-- Model performance metrics
-- ROC-AUC comparisons
-- Resampling effects
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/e6fd97ba-7529-46a4-ad31-567ad4c2902a" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/9f533dbd-4e59-48e7-9eea-4527d4ac551e" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/95c51f5f-53bd-4416-a610-f367efb88666" />
 
 ---
 
@@ -131,23 +121,10 @@ An interactive Power BI dashboard was developed to visualise:
 ### Programming Language
 - R
 
-### Libraries
-- caret
-- tidyverse
-- randomForest
-- e1071
-- mice
-- pROC
-- ROSE
-- DMwR2
-- plotly
-- yardstick
-- rpart
-
 ### Visualisation Tools
 - ggplot2
 - Plotly
-- Power BI
+- Shiny
 
 ---
 
@@ -163,9 +140,6 @@ Stroke-Prediction-ML/
 ├── README.md
 └── requirements.txt
 ```
-
----
-
 ## Key Findings
 
 - Random Forest achieved the best predictive performance
@@ -173,20 +147,12 @@ Stroke-Prediction-ML/
 - BMI, age, and glucose level were strong predictors of stroke risk
 - ROC-AUC analysis demonstrated improved classification after resampling
 
----
 
-## Future Improvements
+## Significance of work to health Science and to Epidemiology
 
-Potential future work includes:
-
-- XGBoost implementation
-- Deep learning models
-- SHAP explainability
-- Deployment using Shiny or Flask
-- Real-time clinical risk scoring
+Stroke remains a leading cause of mortality and long-term disability worldwide. Early detection models can support clinical decision-making, enabling preventive interventions for high-risk patients. The integration of machine learning methods into healthcare analytics allows for improved risk stratification using routinely collected clinical data. Such models can assist healthcare systems in identifying at-risk populations, optimising resource allocation, and improving preventive care strategies. Furthermore, the methodological framework used in this study- combining resampling techniques, ensemble and nonlinear classifiers- can be extended to other disease prediction problems such as cardiovascular disease, diabetes, and infectious disease forecasting.
 
 ---
-
 ## Author
 
 Name: Bisona Honora
