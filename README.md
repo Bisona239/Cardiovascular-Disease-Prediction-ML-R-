@@ -33,11 +33,11 @@ Features include:
 - Smoking status
 - Marital status
 - Work type
-- Residence type
-  
-<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/32e4a371-627f-4e41-8b39-3d6145735a0f" />
+- Residence type 
 
-<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/5a87418c-cf31-4699-91fb-e4b65f01747f" />
+<img width="400" height="360" alt="image" src="https://github.com/user-attachments/assets/32e4a371-627f-4e41-8b39-3d6145735a0f" />
+
+<img width="400" height="360" alt="image" src="https://github.com/user-attachments/assets/5a87418c-cf31-4699-91fb-e4b65f01747f" />
 
 Target Variable:
 
@@ -51,11 +51,20 @@ Target Variable:
 The preprocessing workflow included:
 
 - Missing value handling using MICE imputation
-- One-hot encoding of categorical variables
-- Normalisation using Min-Max scaling
-- Train-test splitting
-- Feature engineering
   
+<img width="400" height="360" alt="image" src="https://github.com/user-attachments/assets/d12a294b-53e1-4a8c-bc11-190bf1efff59" />
+
+<img width="400" height="360" alt="image" src="https://github.com/user-attachments/assets/56d2bf00-e94e-4ab4-bac9-51d58e73702d" />
+
+- Train-test splitting
+<img width="450" height="360" alt="image" src="https://github.com/user-attachments/assets/040032f8-3344-4ed0-b142-10cf278a04bd" />
+
+- Feature engineering (The Boruta model was used here)
+
+
+- One-hot encoding of categorical variables 
+
+- Normalisation using Min-Max scaling
 ---
 
 ## Resampling Techniques
@@ -79,7 +88,6 @@ The following models were implemented and compared:
 |---|---|
 | Random Forest | Ensemble classification |
 | Logistic Regression | Baseline statistical model |
-| Naive Bayes | Probabilistic learning |
 | Support Vector Machine (SVM) | Margin-based classification |
 
 ---
@@ -110,9 +118,9 @@ Example outputs include:
 - Confusion matrices
 - Hyperparameter tuning plots
 
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/e6fd97ba-7529-46a4-ad31-567ad4c2902a" />
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/9f533dbd-4e59-48e7-9eea-4527d4ac551e" />
-<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/95c51f5f-53bd-4416-a610-f367efb88666" />
+<img width="400" height="360" alt="image" src="https://github.com/user-attachments/assets/e6fd97ba-7529-46a4-ad31-567ad4c2902a" />
+<img width="400" height="360" alt="image" src="https://github.com/user-attachments/assets/9f533dbd-4e59-48e7-9eea-4527d4ac551e" />
+<img width="400" height="360" alt="image" src="https://github.com/user-attachments/assets/95c51f5f-53bd-4416-a610-f367efb88666" />
 
 ---
 
