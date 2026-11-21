@@ -136,18 +136,6 @@ Example outputs include:
 
 ---
 
-## Project Structure
-
-```text
-Stroke-Prediction-ML/
-│
-├── data/
-├── scripts/
-├── outputs/
-├── dashboard/
-├── README.md
-└── requirements.txt
-```
 ## Key Findings
 
 - Random Forest achieved the best predictive performance
